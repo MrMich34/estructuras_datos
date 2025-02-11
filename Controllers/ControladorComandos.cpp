@@ -39,8 +39,13 @@ public:
 
         ejecutarComando(comando, parametros);
     }
-
-    // Metodo para ejecutar un comando con sus parametros
+    //
+    /**
+    * Ejecuta el comando requerido
+    * @param string comando
+    * @param vector<string> parametros necesarios
+    * @return none
+    */
     void ejecutarComando(std::string& comando, std::vector<std::string>& parametros) {
         if (comando == "ayuda") {
             if (parametros.empty()) {
