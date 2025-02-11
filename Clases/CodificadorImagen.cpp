@@ -1,20 +1,12 @@
-#include <iostream>
-#include <string>
-#include "Imagen.h"
 #include "CodificadorImagen.h"
+#include "Imagen.h"
+#include <iostream>
 
-bool codificarImagen(std::string& nombreArchivo) {
-    std::cout << "Llamada a codificarImagen con nombreArchivo: " << nombreArchivo << std::endl;
-    return true;
+void CodificadorImagen::codificarImagen(std::string& archivoEntrada) {
+    std::cout << "Codificando imagen: " << archivoEntrada << std::endl;
 }
 
-// Metodo para decodificar una imagen desde un archivo
-/** 
- * El metodo descodifica una imagen proveniente de un archivo
- * @param String Ruta del archivo
- * @return Se retorna un booleano verdadero en caso que haya sido exitosa
-*/
-Imagen decodificarArchivo(std::string& nombreArchivo, std::string& nombreImagen) {
-    std::cout << "Llamada a decodificarArchivo con nombreArchivo: " << nombreArchivo << std::endl;
-    return Imagen(); // Retorna una imagen vacia por ahora
+Imagen CodificadorImagen::decodificarArchivo(std::string& archivoEntrada, std::string& archivoSalida) {
+    std::cout << "Decodificando archivo: " << archivoEntrada << " a " << archivoSalida << std::endl;
+    return Imagen();
 }

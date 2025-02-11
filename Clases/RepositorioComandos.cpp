@@ -21,6 +21,9 @@ public:
         comandos["info_imagen"] = "Muestra información de la imagen cargada en memoria.";
         comandos["info_volumen"] = "Muestra información del volumen cargado en memoria.";
         comandos["proyeccion2D <dirección> <criterio> <nombre_archivo.pgm>"] = "Genera la proyección 2D de un volumen y la guarda en un archivo.";
+        comandos["codificar_imagen <nombre_archivo.pgm>"] = "Codifica una imagen y la guarda en un archivo.";
+        comandos["decodificar_archivo <nombre_archivo.pgm> <nombre_archivo.pgm>"] = "Decodifica un archivo y lo guarda en otro.";
+        comandos["segmentar <nombre_archivo.pgm> <umbral>"] = "Segmenta una imagen y la guarda en un archivo.";
     }
 
     /**

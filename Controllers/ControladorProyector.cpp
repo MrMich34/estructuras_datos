@@ -2,7 +2,7 @@
 #include <string>
 #include "../Views/ConsolaVista.h"
 #include "../Clases/Imagen.h"
-#include "../Clases/CodificadorImagen.cpp"
+#include "../Clases/CodificadorImagen.h"
 
 class ControladorProyector {
 private:
