@@ -5,9 +5,15 @@
 
 class SegmentadorImagen {
 public:
-    // Metodo para segmentar una imagen usando grafos
-    Imagen segmentar(Imagen& img, std::vector<std::tuple<int, int, int>>& semillas) {
+    //
+    /**
+     * Segmentar una imagen utilizando representaciones basadas en grafos
+     * @param Imagen Imagen en cuestion
+     * @param vector<tuple<int,int,int>> Contenedor donde se alojan las semillas
+     * @return Imagen vacia (Temporal)
+     */
+    Imagen segmentar(Imagen& img, std::vector<std::tuple<int, int, int>>&semillas) {
         std::cout << "Llamada a segmentar con " << semillas.size() << " semillas" << std::endl;
-        return Imagen(); // Retorna una imagen vacia por ahora
+        return Imagen();
     }
 };

@@ -15,14 +15,14 @@ public:
     void codificarImagen(std::string& nombreSalida) {
         std::cout << "Llamada a codificarImagen con nombreSalida: " << nombreSalida << std::endl;
         // Se simula la codificacion de la imagen
-        codificador.codificarImagen(imagenActual, nombreSalida);
+        codificador.codificarImagen(nombreSalida);
     }
 
     // Método para decodificar una imagen desde un archivo y guardarla
     void decodificarArchivo(std::string& nombreArchivo, std::string& nombreSalida) {
         std::cout << "Llamada a decodificarArchivo con nombreArchivo: " << nombreArchivo << " y nombreSalida: " << nombreSalida << std::endl;
         // Se simula la decodificacion de la imagen
-        Imagen imagenDecodificada = codificador.decodificarArchivo(nombreArchivo);
+        Imagen imagenDecodificada = codificador.decodificarArchivo(nombreArchivo, nombreSalida);
         imagenDecodificada.guardarComoPGM(nombreSalida);
     }
 };

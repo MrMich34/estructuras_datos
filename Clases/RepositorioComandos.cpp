@@ -6,7 +6,12 @@ private:
     std::unordered_map<std::string, std::string> comandos;
 
 public:
-    // Constructor
+    //
+    /**
+     * Se crea el constructor referente al repositorio de comandos
+     * @param none
+     * @return none
+     */
     RepositorioComandos() {
         comandos["ayuda"] = "Muestra la lista de comandos disponibles.";
         comandos["ayuda <comando>"] = "Muestra información detallada de un comando específico.";
@@ -18,12 +23,21 @@ public:
         comandos["proyeccion2D <dirección> <criterio> <nombre_archivo.pgm>"] = "Genera la proyección 2D de un volumen y la guarda en un archivo.";
     }
 
-    // Metodo para obtener la lista de comandos
+    /**
+     * Se obtienen los comandos existentes actualmente
+     * @param none
+     * @return unordered_map<string,string> Comandos dsiponibles
+     */
     std::unordered_map<std::string, std::string> obtenerComandos() {
         return comandos;
     }
 
-    // Metodo para obtener la descripción de un comando
+    //
+    /**
+     * Obtiene el comando que el usuario desea
+     * @param String del comando
+     * @return En caso de existencia retorna el comando, caso contrario retorna cadena de no encontrado
+     */
     std::string obtenerDescripcion(std::string& comando) {
         if (comandos.find(comando) != comandos.end()) {
             return comandos[comando];

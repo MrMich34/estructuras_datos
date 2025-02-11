@@ -17,7 +17,7 @@ public:
     Imagen();
 
     bool cargarDesdePGM(std::string& ruta);
-    void guardarComoPGM(std::string& ruta);
+    bool guardarComoPGM(std::string& ruta);
     void mostrarInfo();
 };
 

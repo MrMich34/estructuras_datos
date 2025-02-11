@@ -10,6 +10,7 @@
 #include "ControladorProyector.cpp"
 #include "ControladorSegmentador.cpp"
 
+
 class ControladorComandos {
 private:
     ConsolaVista vista;
@@ -29,7 +30,7 @@ public:
         std::istringstream iss(input);
         std::string comando;
         iss >> comando;
-
+        
         std::vector<std::string> parametros;
         std::string parametro;
         while (iss >> parametro) {
@@ -54,13 +55,32 @@ public:
             controladorCodificacion.cargarImagen(parametros[0]);
         } else if (comando == "cargar_volumen" && parametros.size() == 2) {
             controladorCodificacion.cargarVolumen(parametros[0], std::stoi(parametros[1]));
-        } else if (comando == "info_imagen") {
+        } else if (comando == "codificar_imagen" && parametros.size() == 1){
+            controladorCodificacion.codificarImagen(parametros[0]);
+        } else if (comando == "decodificar_archivo" && parametros.size() == 2){
+            controladorCodificacion.decodificarArchivo(parametros[0], parametros[1]);
+        }else if (comando == "info_imagen") {
             controladorCodificacion.mostrarInfoImagen();
         } else if (comando == "info_volumen") {
             controladorCodificacion.mostrarInfoVolumen();
         } else if (comando == "proyeccion2D" && parametros.size() == 3) {
             controladorCodificacion.proyeccion2D(parametros[0], parametros[1], parametros[2]);
-        } else {
+        } else if (comando == "segmentar"){
+            std::string destino;
+            destino = parametros[0];
+            std::vector<std::tuple<int, int, int>> semillas;
+            int t1,t2,t3;
+            for(int i = 1; i<parametros.size(); i++){
+                t1 = stoi(parametros[i]);
+                i++;
+                t2 = stoi(parametros[i]);
+                i++;
+                t3 = stoi(parametros[i]);
+                std::tuple<int,int,int> tp(t1,t2,t3);
+                semillas.push_back(tp);
+            }
+            controladorSegmentador.segmentarImagen(semillas,destino);
+        }else {
             vista.mostrarError("Comando no reconocido o parámetros incorrectos.");
         }
     }
