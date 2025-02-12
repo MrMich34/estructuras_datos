@@ -25,6 +25,7 @@ public:
     // Constructor
     ControladorComandos() : imagenActual(nullptr), volumenActual(nullptr) {}
 
+    //
     /**
     *Procesa la entrada del usuario
     *@param string comando
@@ -94,6 +95,7 @@ public:
         }
     }
 
+    //
     /**
     *Mostrar la ayuda para todos los comandos
     *@param none
@@ -106,6 +108,7 @@ public:
         }
     }
 
+    //
     /**
     *Metodo para mostrar la ayuda de un comando especifico
     *@param string comando
@@ -117,6 +120,7 @@ public:
     }
 };
 
+//
 /**
 *Funcion main para ejecutar el programa
 */
