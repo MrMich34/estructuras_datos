@@ -15,7 +15,8 @@ void CodificadorImagen::codificarImagen(std::string& archivoEntrada) {
 //
 /**
  * Metodo para decodificar una imagen a formato PGM
- * @param String de archivo de entrada a decodificar (archivo en formato.huf), junto a String de archivo de salida (imagen.pgm)
+ * @param String de archivo de entrada a decodificar (archivo en formato.huf)
+ * @paramString de archivo de salida (imagen.pgm)
  * Es de tipo imagen, por lo que retorna un elemento del mismo tipo - Al no ser parte de esta entrega, la funcion no esta implementada
  */
 Imagen CodificadorImagen::decodificarArchivo(std::string& archivoEntrada, std::string& archivoSalida) {
