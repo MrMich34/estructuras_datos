@@ -13,6 +13,12 @@ private:
     Imagen imagenActual;
 
 public:
+    /**
+    * Segmenta una imagen usando semillas y guarda el resultado en un archivo
+    * @param std::vector<std::tuple<int, int, int>>& semillas - Lista de semillas para la segmentación
+    * @param std::string& salida - Nombre del archivo de salida donde se guardará la imagen segmentada
+    * @return void
+    */
     // Metodo para segmentar una imagen usando semillas y guardar el resultado en un archivo
     void segmentarImagen(std::vector<std::tuple<int, int, int>>& semillas, std::string& salida) {
         std::cout << "Llamada a segmentarImagen con " << semillas.size() << " semillas y salida: " << salida << std::endl;
