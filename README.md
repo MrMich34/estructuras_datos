@@ -1,6 +1,14 @@
-# Proyecto asignatura Estructuras de Datos 
-## Integrantes Salomon Avila, Angel Morales, Tomas Silva, Juan Pabon y Gabriel Jaramillo
 
+## Documentacion
+
+El objetivo de este proyecto desarrollado para la asignatura de Estructuras de datos de la Pontificia universidad javeriana prentede construir un sistema que incluya algunos componentes para el procesamiento
+de imágenes en escala de grises, utilizando algunos conceptos de Estructuras de Datos vistos a lo largo del
+semestre.
+## Compilacion
+
+    1. Descargar/Clonar repositorio
+
+    2. Entrar al directorio "estructuras_datos"
 
 ## Authors
 
