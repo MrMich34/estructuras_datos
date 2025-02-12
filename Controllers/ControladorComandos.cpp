@@ -25,7 +25,11 @@ public:
     // Constructor
     ControladorComandos() : imagenActual(nullptr), volumenActual(nullptr) {}
 
-    // Metodo para procesar la entrada del usuario
+    /**
+    *Procesa la entrada del usuario
+    *@param string comando
+    *@return none
+    */
     void procesarEntrada(const std::string& input) {
         std::istringstream iss(input);
         std::string comando;
@@ -90,7 +94,11 @@ public:
         }
     }
 
-    // Metodo para mostrar la ayuda
+    /**
+    *Mostrar la ayuda para todos los comandos
+    *@param none
+    *@return none
+    */
     void mostrarAyuda() {
         auto comandos = repositorio.obtenerComandos();
         for (auto& par : comandos) {
@@ -98,14 +106,20 @@ public:
         }
     }
 
-    // Metodo para mostrar la ayuda de un comando especifico
+    /**
+    *Metodo para mostrar la ayuda de un comando especifico
+    *@param string comando
+    *@return none
+    */
     void mostrarAyudaComando(std::string& comando) {
         std::string descripcion = repositorio.obtenerDescripcion(comando);
         vista.mostrarMensaje(comando + ": " + descripcion);
     }
 };
 
-// Funcion main para ejecutar el programa
+/**
+*Funcion main para ejecutar el programa
+*/
 int main() {
     ControladorComandos controlador;
     std::string input;
