@@ -11,6 +11,7 @@ private:
     Imagen imagenActual;
 
 public:
+    //
     /**
     *Codifica una imagen y guardarla en un archivo
     *@param string nombreSalida
@@ -22,6 +23,7 @@ public:
         codificador.codificarImagen(nombreSalida);
     }
 
+    //
     /**
     *Decodifica una imagen desde un archivo y guardarla
     *@param string nombreArchivo
