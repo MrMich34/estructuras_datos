@@ -14,8 +14,8 @@ semestre.
 
 ## Authors
 
-- [Angellovem](https://github.com/Angellovem)
 - [MrMich34](https://github.com/MrMich34)
+- [Angellovem](https://github.com/Angellovem)
 - [JohnWilliams2050](https://github.com/JohnWilliams2050)
 - [ GabrielJaramilloCuberos ](https://github.com/GabrielJaramilloCuberos)
 - [Tomas-SilvaC](https://github.com/Tomas-SilvaC)
