@@ -8,7 +8,7 @@ semestre.
 
     1. Descargar/Clonar repositorio
 
-    2. Entrar al directorio "estructuras_datos"
+    2. Entrar al directorio /Controllers
 
     3. Copiar y ejecutar el codigo de compilaion: g++ -std=c++11 -o my_program \ControladorCodificacion.cpp ControladorComandos.cpp ControladorProyector.cpp ControladorSegmentador.cpp \ ../Clases/Imagen.cpp ../Clases/VolumenImagenes.cpp ../Clases/CodificadorImagen.cpp ../Clases/RepositorioComandos.cpp ../Clases/SegmentadorImagenes.cpp \ ../Views/ConsolaVista.cpp
 
