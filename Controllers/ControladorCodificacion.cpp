@@ -89,7 +89,8 @@ public:
     //
     /**
      * Metodo controlador para decodificación de una imagen
-     * @param String de archivo.huf donde se encuentra la información, junto a un String del nombre de la imagen que se guardara en formato .pgm
+     * @param String de archivo.huf donde se encuentra la información
+     * @param String del nombre de la imagen que se guardara en formato .pgm
      * Al ser de tipo Imagen, retornara un elemento del mismo tipo - Al no ser parte de esta entrega, la funcion no esta implementada
      */
     Imagen decodificarArchivo(std::string& nombreArchivo, std::string& nombreImagen) {
