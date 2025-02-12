@@ -73,7 +73,12 @@ public:
         proyeccion.guardarComoPGM(salida);
     }
 
-
+    //
+    /**
+     * Metodo controlador para codificación de una imagen
+     * @param String de archivo de entrada a codificar que estara cargada en memoria para ser verificado y codificado
+     * Al ser de tipo "bool", retornara un valor del mismo tipo (1 o 0) dependiendo el resultado - Al no ser parte de esta entrega, la funcion no esta implementada
+     */
     bool codificarImagen(std::string& nombreArchivo){
         
         std::cout << "Llamada a funcion: " << nombreArchivo << std::endl;
@@ -81,6 +86,12 @@ public:
         return true;
     }
 
+    //
+    /**
+     * Metodo controlador para decodificación de una imagen
+     * @param String de archivo.huf donde se encuentra la información, junto a un String del nombre de la imagen que se guardara en formato .pgm
+     * Al ser de tipo Imagen, retornara un elemento del mismo tipo - Al no ser parte de esta entrega, la funcion no esta implementada
+     */
     Imagen decodificarArchivo(std::string& nombreArchivo, std::string& nombreImagen) {
         std::cout << "Llamada a funcion: " << nombreArchivo << std::endl;
         codificadorImagen.decodificarArchivo(nombreArchivo, nombreImagen);
